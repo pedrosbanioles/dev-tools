@@ -1,0 +1,12 @@
+<Configuration>
+    <MappedFolders>
+        <MappedFolder>
+            <HostFolder>{{SANDBOX_ROOT}}</HostFolder>
+            <SandboxFolder>C:\dev\</SandboxFolder>
+            <ReadOnly>true</ReadOnly>
+        </MappedFolder>
+    </MappedFolders>
+    <LogonCommand>
+        <Command>powershell.exe -Command "{{SANDBOX_ROOT}}\install-tools.ps1 $suite {{SUITE}}"</Command>
+    </LogonCommand>
+</Configuration>
