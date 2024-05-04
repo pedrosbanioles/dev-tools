@@ -7,6 +7,6 @@
         </MappedFolder>
     </MappedFolders>
     <LogonCommand>
-        <Command>powershell.exe -Command "{{SANDBOX_ROOT}}\install-tools.ps1 $suite {{SUITE}}"</Command>
+        <Command>powershell -executionpolicy unrestricted -command "start powershell {-noexit -command Set-Location C:\dev\; .\install-winget.ps1; .\install-tools.ps1 -suite {{SUITE}}}"</Command>
     </LogonCommand>
 </Configuration>
