@@ -1,0 +1,12 @@
+<Configuration>
+    <MappedFolders>
+        <MappedFolder>
+            <HostFolder>{{SANDBOX_ROOT}}</HostFolder>
+            <SandboxFolder>C:\dev\</SandboxFolder>
+            <ReadOnly>true</ReadOnly>
+        </MappedFolder>
+    </MappedFolders>
+    <LogonCommand>
+        <Command>powershell -executionpolicy unrestricted -command "start powershell {-noexit -command Set-Location C:\dev\; .\install-winget.ps1; .\install-tools.ps1 -suite {{SUITE}}}"</Command>
+    </LogonCommand>
+</Configuration>
