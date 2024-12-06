@@ -11,6 +11,7 @@ ultrapico.expresso
 Python.Python.3.9
 Microsoft.VisualStudioCode
 #Microsoft.XMLNotepad
-#JetBrains.Toolbox
-#Microsoft.VisualStudio.2022.Professional
-#Docker.DockerDesktop
+JetBrains.Toolbox
+Microsoft.VisualStudio.2022.Professional
+Docker.DockerDesktop
+Microsoft.Dotnet.Framework.DeveloperPack_4
